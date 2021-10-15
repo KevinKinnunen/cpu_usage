@@ -1,0 +1,11 @@
+[Unit]
+Description=Service for cpu_usage.py to check if memory was higher than entered memory
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /root/cpu_usage.py
+
+[Install]
+WantedBy=multi-user.target
