@@ -9,34 +9,34 @@ cpu_usage.rapport.txt is used to logg information:
 - PID, Name, Memory
 - Was entered memory higher or lower than memory (higher = beep sound)
 
-# Access to root
+### Access to root
 sudo su -
 
 sudo nano /etc/systemd/system/cpu_usage_service
 sudo nano cpu_usage.py
 
-# Files and path
+### Files and path
 - /home/kevin/cpu_usage_rapport.txt
 - /home/kevin/cpu_usage.py
 - /etc/systemd/system/cpu_usage_service
 
-# Reload daemon
+### Reload daemon
 - sudo systemctl daemon-reload
 
-# Enable service
+### Enable service
 - sudo systemctl enable cpu_usage.service
 
-# Start service
+### Start service
 - sudo systemctl start cpu_usage.service
 
-# Stop service
+### Stop service
 - sudo systemctl stop cpu_usage.service
 
-# Restart service
+### Restart service
 - sudo systemctl restart cpu_usage.service
 
-# Check status of service
+### Check status of service
 - sudo systemctl status cpu_usage.service
 
-# Disable service
+### Disable service
 - sudo systemctl disable cpu_usage.service
