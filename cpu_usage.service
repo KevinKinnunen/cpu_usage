@@ -1,11 +1,11 @@
 [Unit]
-Description=Service for cpu_usage.py to check if memory was higher than entered memory
+Description=Memory check, beep if over 50Mbs and 1Gbs 
 After=multi-user.target
 
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /root/cpu_usage.py
+ExecStart=/usr/bin/python3 /home/kevin/cpu_usage.py
 
 [Install]
 WantedBy=multi-user.target
