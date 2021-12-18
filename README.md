@@ -4,6 +4,9 @@ E.g.
 -M (memory check, if memory is higher than e.g. 20, it will beep)
 -T (timer, 10 = 10 sec, its required).
 
+Program settings:
+Beep if memory higher than 50MBs or higher than 1Gb
+
 cpu_usage.rapport.txt is used to logg information:
 - If app is running (beep once)
 - PID, Name, Memory
